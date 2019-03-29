@@ -15,7 +15,7 @@
   way, at some point you reflect and wonder "How did this mess even get released in the first place?" or "What is the
   quickest path away from all this thoughtless engineering and soul-crushing operational support?"
 
-  In this article I will explain that not only why running code always wins, but why it is, in fact, pivotal to how we *ought*
+  In this article I will explain not only why running code always wins, but why it is, in fact, pivotal to how we *ought*
   to behave as an engineer. "For shame!" you say. Before I dive into it, first let me take you back to my early days as
   a software engineer, back when my love of high-level computer language constructs led me to what I considered the peak
   of development practices at the time.
@@ -25,7 +25,7 @@
   become a huge proponent of [design patterns](https://hub.packtpub.com/famous-gang-of-four-design-patterns/) and found
   all the marvelous ways they could be used.
   
-  Avoiding large inheritence hierarchies? Favor composition! Also, hello Strategy pattern!
+  Avoiding large inheritence hierarchies? Favor composition! Hello Strategy pattern!
 
   Family of similar objects with excessive concrete types? Time to save me Factory Method pattern!
 
