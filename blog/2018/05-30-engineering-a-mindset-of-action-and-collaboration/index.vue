@@ -7,14 +7,15 @@
 </script>
 
 <template lang="md">
-  "Running code wins!" You probably know what this looks like. A monolithic program, or a tangle of services that are
-  long overdue for an update, maybe even decommission, but the longer they survive is now following the curves of
-  increased risk and dimished understanding. Or consider the release that was meant to be a prototype, but now is the
-  shipping product and as a bonus the original engineers are gone, and the users are ramping up expectations. How did
-  this mess even begin, and what can be done to get away from thoughtless engineering and soul-crushing operational
-  support?
+  "Running code wins!" You probably know what this looks like - imagine that one monolithic application or tangle of
+  services which has been the most operationally demanding to you but that no one can seem to get rid of. The more you
+  want to fix it, the more you fear that the time spent will end up in yet more long nights for you and your team
+  supporting a new set of surprises that await. Or consider the release that was meant to be a prototype, but now is the
+  shipping product. As a bonus the original engineers are gone, and the users are ramping up expectations. Either
+  way, at some point you reflect and wonder "How did this mess even get released in the first place?" or "What is the
+  quickest path away from all this thoughtless engineering and soul-crushing operational support?"
 
-  In this article I will explain not only why that statement is true, but why it is, in fact, pivotal to how we *ought*
+  In this article I will explain that not only why running code always wins, but why it is, in fact, pivotal to how we *ought*
   to behave as an engineer. "For shame!" you say. Before I dive into it, first let me take you back to my early days as
   a software engineer, back when my love of high-level computer language constructs led me to what I considered the peak
   of development practices at the time.
