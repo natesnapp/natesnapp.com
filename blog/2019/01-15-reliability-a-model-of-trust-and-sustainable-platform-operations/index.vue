@@ -66,7 +66,7 @@
   more important (and fun) work of features and scalability, right?
 
   It turns out that the reliability picture makes the most sense when one looks at the nature of how *products* work. Note
-  the distinct use of the term 'product' here aside from 'platform'. The utility of a single product is magnified when it is able
+  the distinct use of the term 'product' here aside from 'platform'. The utility of a single *product* is magnified when it is able
   to leverage the user base and functionality of complementary *products*. This means that according to some cost/benefit
   curve, integrations will inevitably be created between them, whether or not APIs were created for this purpose. Another
   quote by Dave Resnin is "All critical products become platforms. Therefore, the total stability of the resulting
@@ -268,7 +268,7 @@
   <sup>1</sup> Those familiar with DevOps principles will also recognize this as one of the pillars in reducing
   organizational silos.
 
-  <sup>2</sup> For those curious on why emotional memory drives blame here, it is actually becuase of psychological bias
+  <sup>2</sup> For those curious on why emotional memory drives blame here, it is actually because of psychological bias
   which drives snap decisions when time or information is not available to perform objective reasoning.
 
 </template>
