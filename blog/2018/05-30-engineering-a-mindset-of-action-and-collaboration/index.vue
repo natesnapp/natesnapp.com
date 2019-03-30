@@ -2,7 +2,7 @@
 <script>
   export default {
     title: 'Engineering a mindset of action and collaboration',
-    tags: ['engineering', 'best practices']
+    tags: ['software engineering', 'best practices']
   }
 </script>
 

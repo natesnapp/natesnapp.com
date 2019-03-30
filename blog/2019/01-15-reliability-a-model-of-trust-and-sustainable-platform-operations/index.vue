@@ -2,11 +2,19 @@
 <script>
   export default {
     title: 'Reliability: A model of trust and sustainable platform operations',
-    tags: ['software engineering', 'sre', 'reliability']
+    tags: ['software engineering', 'sre', 'reliability'],
+    tldr: [
+      'Reliability is key objective, and many organizations march towards as many 9s as possible, but struggle to effectively align development budgets',
+      'Partership in reliability story requires additional \'levers of reverse demand\' betweens operational, development, and business teams; this tells the business when it is time to change focus from feature development and support to reliability enhancement work',
+      'There are important distinctions between SLA, SLO, and SLI (Server Level Agreements, Objectives, and Indicators)',
+      'The first and great commandment of Reliability Engineering is to establish and maintain error budgets, which are estimations of imperfections in a platform against the measured time to resolve'
+    ]
   }
 </script>
 
 <template lang="md">
+
+  ## Preface
 
   Delivering a platform in an IT organization involves meeting a set of goals that must be pursued simultaneously:
 
@@ -96,8 +104,8 @@
   all levels (i.e. 'all players can play for a winning hand'). Thus, a model for partnership requires a different view
   such as the one below, described by Henry Robertson:
 
-  <figure class="center">
-    <img src="./sre-relationship.png" />
+  <figure class="smallest right">
+    <img src="./sre-relationship.png" style="width: 400px" />
   </figure>
 
   The primary difference in this model is that there are symmetric 'levers' in the relationship that can be pulled,
@@ -149,62 +157,62 @@
   they are drawing on emotional memory<sup>2</sup> not because they are bad people.
 
   If we form the user population into two over-simplified clusters, we can call one the solution-seekers and the second
-the support-seekers:
+  the support-seekers:
 
   **Solution-seekers**: On this end is the group that will seek corrective information and apply it with iterative
-effort to fix their poor experience. They are typically operating *asynchronously* from platform support persons.
+  effort to fix their poor experience. They are typically operating *asynchronously* from platform support persons.
 
   **Support-seekers**: The other end is a group that will commonly have other interests or time constraints and will
-lean heavily on platform support to provide patch solutions on their behalf. In addition they often seek to work
-*synchronously* with platform support persons.
+  lean heavily on platform support to provide patch solutions on their behalf. In addition they often seek to work
+  *synchronously* with platform support persons.
 
   Support model tiers are created to triage these user clusters appropriately, and higher tiers are naturally removed
-from the immediate break-fix support. What this doesn't account for is the need to create invested users; it is a
-support model, after all. One opportunity to create this investment or perhaps to simply avoid building resentment is
-the understanding of the business objectives from the platform team. The empathetic exercise of this knowledge is a call
-to trust the decisions made on the platform, whether or not they directly speak to immediate business crises.
+  from the immediate break-fix support. What this doesn't account for is the need to create invested users; it is a
+  support model, after all. One opportunity to create this investment or perhaps to simply avoid building resentment is
+  the understanding of the business objectives from the platform team. The empathetic exercise of this knowledge is a call
+  to trust the decisions made on the platform, whether or not they directly speak to immediate business crises.
 
   ## Service Level Agreements, Indicators, and Objectives
 
   In order to provide for the assumption that a service will not be available 100%, there are several concepts to
-describe areas of focus with objective measures.
+  describe areas of focus with objective measures.
 
   **SLA (Service Level Agreement)**: This is a binding agreement between a service provider and its customers, and is
-typically tied to refunds or legal action when it is broken. This will not be widely discussed in this article since
-internally the SLOs will be built around avoiding an SLA breach. Also, team relationships will end up structured more
-around SLOs.
+  typically tied to refunds or legal action when it is broken. This will not be widely discussed in this article since
+  internally the SLOs will be built around avoiding an SLA breach. Also, team relationships will end up structured more
+  around SLOs.
 
   **SLI (Service Level Indicator)**: As mentioned previously, these are measures of some aspect of the service that
-correlates with user happiness or unhappiness. An example would be a Netflix user pressing the 'play' button. A
-millisecond response, a multi-second response, and a failed response will all track with increasing levels of user
-unhappiness.
+  correlates with user happiness or unhappiness. An example would be a Netflix user pressing the 'play' button. A
+  millisecond response, a multi-second response, and a failed response will all track with increasing levels of user
+  unhappiness.
 
   These indicators will naturally be tailored toward the type of service provided. While a user-facing system such as
-search or a video player may care most about availability, latency, and throughput in order to effectively serve users,
-a storage system may care more about latency, availability, and durability of data (i.e. is data there when I request it
-via read/write and can it be accessed on demand with reasonable performance?). Big data systems may care most about
-throughput and end-to-end latency (i.e. How much data is being processed and how long does it take to progress from
-ingestion to completion?). Another common SLI measure may be error rate on requests received.
+  search or a video player may care most about availability, latency, and throughput in order to effectively serve users,
+  a storage system may care more about latency, availability, and durability of data (i.e. is data there when I request it
+  via read/write and can it be accessed on demand with reasonable performance?). Big data systems may care most about
+  throughput and end-to-end latency (i.e. How much data is being processed and how long does it take to progress from
+  ingestion to completion?). Another common SLI measure may be error rate on requests received.
 
   When enforcing the time that is spent from platform operations and development, SLIs can be instrumental to keep focus
-on those items that are ultimately tied to user happiness.
+  on those items that are ultimately tied to user happiness.
 
   **SLO (Service Level Objective)**: These are target values or ranges for a service measured by an SLI. In going back
-to the Netflix example with pressing the 'play' button, there could be several systems that the user does not know or
-care about, that may be involved with a fast and successful attempt to start a video. By having the correct thresholds
-in different SLOs that are related to the SLI, there is now a specified target for performance. These can also be
-bounded for specific days of the week, and other factors that are unique to the platform service being targeted.
+  to the Netflix example with pressing the 'play' button, there could be several systems that the user does not know or
+  care about, that may be involved with a fast and successful attempt to start a video. By having the correct thresholds
+  in different SLOs that are related to the SLI, there is now a specified target for performance. These can also be
+  bounded for specific days of the week, and other factors that are unique to the platform service being targeted.
 
   It is unrealistic and undesirable for SLOs to be met 100% of the time, as it has the detrimental effect of either
-reducing innovation and deployment, requiring overly conservative solutions, or both [Treynor]. Error budgets are
-intended to address this gap.
+  reducing innovation and deployment, requiring overly conservative solutions, or both [Treynor]. Error budgets are
+  intended to address this gap.
 
   SLOs can—and should—be a major driver in prioritizing work for platform operators and product developers, because they
-reflect what users care about.
+  reflect what users care about.
 
   Once error budgets have been described, it will be seen that the activities of developers and platform operations will
-be able to shift with greater alignment between capability development, product features and reliability engineering
-work depending on the health of the platform as measured by SLIs and SLOs [Neff].
+  be able to shift with greater alignment between capability development, product features and reliability engineering
+  work depending on the health of the platform as measured by SLIs and SLOs [Neff].
 
   ## Error Budgets
 
@@ -224,7 +232,7 @@ work depending on the health of the platform as measured by SLIs and SLOs [Neff]
   Armed with a list of these imperfections, these can be grouped and affirmed with partner teams. The error budget
   determines that once an SLO is at risk or not met, development teams are enabled with time to address the risk prior to
   continuing feature development work. As such, these do not become a weapon of blame, but rather a call for partnership.
-  To complete the thought of “shifting team alignments” brought up with SLOs, the operations and development teams will be
+  To complete the thought of "shifting team alignments" brought up with SLOs, the operations and development teams will be
   able to jointly form a stronger co-development strategy as they have incentives to swing toward efforts for stronger
   reliability (and whatever other SLOs are formed), and for capability development that enables feature delivery.
 
@@ -232,30 +240,36 @@ work depending on the health of the platform as measured by SLIs and SLOs [Neff]
   prioritized to help avoid SLO violations in future weeks.
 
   Error budgets enable an IT organization to drive reliability with speed. As noted by Treynor and Resnin: Speed and
-  reliability traditionally form an “X”: a crossroad that both impede and are exclusive to efforts for the other. By
-  working with error budgets, these become “co-linear” in that the measurement of reliability metrics can determine the
+  reliability traditionally form an "X": a crossroad that both impede and are exclusive to efforts for the other. By
+  working with error budgets, these become "co-linear" in that the measurement of reliability metrics can determine the
   speed of delivery, and vice-versa
 
   ## Action Steps
 
-  The steps outlined here are just a start. The reason to start small, is that there is tremendous benefit to simply
+  The steps outlined here are just a start. The reason to start small is that there is tremendous benefit to simply
   beginning the process and outlining what is known. This can serve to inform teams and start the consensus building
   process. This works in an inverted fashion from a process such as GDPR, and buy in and value has to be seen quickly to
-  justify the practices outlined in this paper.
+  justify the practices outlined in this article.
 
-  Steps: 1) Pick a platform service of reasonable importance. It doesn’t work to pick a greenfield project that no users
-  care about.  2) Create a judicious selection of SLI measures that users of this platform will care about.  3) List
-  imperfections in the platform that would touch on this preliminary list of SLIs.  4) Determine SLOs that will support
-  achieving the positive user outcome of SLI metrics.  a.This can be focused on a single area for now, such as Reliability
-  discussed in this article. Other areas of focus can come later.  5) Determine availability target for these SLOs, pick
-  one, and create an error budget using the worksheet at https://goo.gl/bnsPj7.  Seek consensus with partner teams, to
-  ensure SLIs are relevant to the business and SLOs can be supported by development. Use these to direct operational and
-  development “spend”.
+  Steps:
+  1) Pick a platform service of reasonable importance. It doesn’t work to pick a greenfield project that no users
+  care about.
+  2) Create a judicious selection of SLI measures that users of this platform will care about.
+  3) List imperfections in the platform that would touch on this preliminary list of SLIs.
+  4) Determine SLOs that will support achieving the positive user outcome of SLI metrics.
+	a. This can be focused on a single area for now, such as Reliability discussed in this article. Other areas of focus
+    can come later.
+  5) Determine availability target for these SLOs, pick one, and create an error budget using the worksheet at
+  https://goo.gl/bnsPj7.  Seek consensus with partner teams, to ensure SLIs are relevant to the business and SLOs can be
+  supported by development. Use these to direct operational and development "spend".
 
-  <sup>1</sup> Those familiar with DevOps principles will also recognize this as one of the pillars in reducing organizational silos.
+  ## References
 
-  <sup>2</sup> For those curious on why emotional memory drives blame here, it is actually becuase of psychological bias which drives
-  snap decisions when time or information is not available to perform objective reasoning.
+  <sup>1</sup> Those familiar with DevOps principles will also recognize this as one of the pillars in reducing
+  organizational silos.
+
+  <sup>2</sup> For those curious on why emotional memory drives blame here, it is actually becuase of psychological bias
+  which drives snap decisions when time or information is not available to perform objective reasoning.
 
 </template>
 
