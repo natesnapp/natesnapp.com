@@ -89,7 +89,7 @@
 
   Let's look at these relationships by how the incentives are formed. We'll take an over-simplified analogy to describe
   this. Imagine a game of blackjack or poker, where capabilities are represented by a deck of cards. These are dealt 'on
-  demand' to a fulfill requests of the players sitting upstream. In this analogy, the platform team holds the entire
+  demand' to fulfill requests of the players sitting upstream. In this analogy, the platform team holds the entire
   deck of cards and reactively/proactively deals. The game is the platform team's to lose. The trick is that the rules
   to win the game are not determined downstream, but by the business. Because of this, there is naturally a heavy trust
   bottom-to-top, and preferably more than a surface understanding of what the business will call a winning hand.
@@ -168,9 +168,20 @@
 
   Support model tiers are created to triage these user clusters appropriately, and higher tiers are naturally removed
   from the immediate break-fix support. What this doesn't account for is the need to create invested users; it is a
-  support model, after all. One opportunity to create this investment or perhaps to simply avoid building resentment is
+  support model, after all. One opportunity to create this investment (or perhaps to simply avoid building resentment) is
   the understanding of the business objectives from the platform team. The empathetic exercise of this knowledge is a call
   to trust the decisions made on the platform, whether or not they directly speak to immediate business crises.
+
+  ### Building platforms with "invested" business partners
+
+  The operating model for a platform determines the expectations of its user base. It is important to note
+  that the user perception of this model is just as important as its actual implementation. My personal experience is
+  that an operating model that feels 'free' will be used in ways adverse to goals of reliability.
+
+  This is all that will be said here for the purposes of creating invested business partners, as the 'how' goes beyond the
+  scope of this article. What is critical here is to maintain a set of practices that build a platform for solution
+  seekers, and then to use this partnership with the business to establish metrics that are visible and lead to customer
+  happiness and unhappiness (SLIs) and use this to direct focus into development or operational channels.
 
   ## Service Level Agreements, Indicators, and Objectives
 
@@ -257,11 +268,11 @@
   2) Create a judicious selection of SLI measures that users of this platform will care about.
   3) List imperfections in the platform that would touch on this preliminary list of SLIs.
   4) Determine SLOs that will support achieving the positive user outcome of SLI metrics.
-	a. This can be focused on a single area for now, such as Reliability discussed in this article. Other areas of focus
+    a. This can be focused on a single area for now, such as Reliability discussed in this article. Other areas of focus
     can come later.
-  5) Determine availability target for these SLOs, pick one, and create an error budget using the worksheet at
-  https://goo.gl/bnsPj7.  Seek consensus with partner teams, to ensure SLIs are relevant to the business and SLOs can be
-  supported by development. Use these to direct operational and development "spend".
+  5) Determine availability target for these SLOs, pick one, and create an error budget following [this Google doc
+  worksheet](https://goo.gl/bnsPj7).  Seek consensus with partner teams, to ensure SLIs are relevant to the business and
+  SLOs can be supported by development. Use these to direct operational and development "spend".
 
   ## References
 
