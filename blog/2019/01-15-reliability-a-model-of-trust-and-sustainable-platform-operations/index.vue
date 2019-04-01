@@ -5,7 +5,7 @@
     tags: ['software engineering', 'sre', 'reliability'],
     tldr: [
       'Reliability is key objective, and many organizations march towards as many 9s as possible, but struggle to effectively align development budgets',
-      'Partership in reliability story requires additional \'levers of reverse demand\' betweens operational, development, and business teams; this tells the business when it is time to change focus from feature development and support to reliability enhancement work',
+      'Partnership in reliability story requires additional \'levers of reverse demand\' betweens operational, development, and business teams; this tells the business when it is time to change focus from feature development and support to reliability enhancement work',
       'There are important distinctions between SLA, SLO, and SLI (Server Level Agreements, Objectives, and Indicators)',
       'The first and great commandment of Reliability Engineering is to establish and maintain error budgets, which are estimations of imperfections in a platform against the measured time to resolve'
     ]
