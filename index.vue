@@ -25,7 +25,7 @@
 
   export default {
     title: 'Home',
-    description: 'The latest news out of Rich Snapp\'s blog.',
+    description: 'The latest news out of Nate Snapp\'s blog.',
     data() {
       return {
           pages: require('~/static/api/blog-latest.json')
