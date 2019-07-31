@@ -84,7 +84,7 @@ import {
                 {
                     id: "p1",
                     startDate: "2019-08-02",
-                    title: "<b>6pm @ Muirwood</b><br />First team meet-and-greet"
+                    title: "<b>5:30pm @ Muirwood</b><br />First team practice"
                 },
                 {
                     id: "p2",
