@@ -105,25 +105,25 @@ import {
                 },
                 {
                     id: "p4",
-                    startDate: "2019-08-23",
-                    title: "<b>5:30pm @ Muirwood</b><br />Practice"
-                },
-                {
-                    id: "p5",
-                    startDate: "2019-08-28",
+                    startDate: "2019-08-21",
                     title: "<b>5:30pm @ Muirwood</b><br />Practice"
                 },
                 {
                     id: "a2",
-                    startDate: "2019-08-30",
+                    startDate: "2019-08-23",
                     title: "Rest Up for Parade!",
                     classes: "blue"
                 },
                 {
                     id: "e1",
-                    startDate: "2019-08-31",
+                    startDate: "2019-08-24",
                     title: "<b>7:00am @ Main Street</b><br />Opening Parade",
                     classes: "orange"
+                },
+                {
+                    id: "p5",
+                    startDate: "2019-08-30",
+                    title: "<b>5:30pm @ Muirwood</b><br />Practice"
                 },
                 {
                     id: "e2",
