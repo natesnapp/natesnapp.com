@@ -1,12 +1,19 @@
 <template>
   <div>
     <img src="./imgs/dragonflys.png" />
-    <h2>Week 1</h2>
+    <h2>Week 3</h2>
     <p>
-    Welcome to the team! This is going to be a fun season and lots to look forward to. My name is Nate Snapp and I am a first year soccer coach. My athletic background includes hockey, cross country, and yes, soccer! My occupation is in cybersecurity as an engineer working down in Santa Clara.
+    Last Friday was a great success and it was fun to have all the girls have an opportunity to meet and practice together. I'd like to pass along the news that we have a new player joining our team. Please welcome Charlotte! We will see her tomorrow at practice.
     </p>
     <p>
-    This site is intended to gather a list of important announcements, provide a calendar of events, and hopefully even showcase our wonderful young players.
+    Here is some info for this week:
+    <ul>
+    <li>Practice is Wednesday this week and next (online calendar). It will be at 5:30 and at the same location (Muir Wood park @ 4701 Muirwood Dr, by the playground).</li>
+    <li>We have our team Pizza/Pool party after practice, Aug 21. I will grab some pizzas from Costco and we can organize some other food/drinks next week. Bring swimsuits and come see our team banner and we'll make sure it is all ready for the parade!</li>
+    <li>I talked to the Rage coordinator this morning (Tamie) and they are still finishing up the game schedule. I would expect to have it in the next few days, and I will post it on our calendar as soon as I receive it.</li>
+    <li>She also mentioned that uniforms have arrived, but the official email has not gone out. I'm hoping they have them available for tomorrow to check sizes, if needed.</li>
+    <li>I'd like to find a way to help the girls get to know each other a little better, and so I put together a short questionnaire. Please take a moment with your little player to fill this out &#128512;</li>
+    </ul>  
     </p>
         <div class="calendar-parent">
             <calendar-view
@@ -265,6 +272,9 @@ import {
       height: 100%;
       margin: 0;
       background-color: #f7fcff;
+  }
+  p {
+      text-indent: 0 !important;
   }
   #app {
       display: flex;
