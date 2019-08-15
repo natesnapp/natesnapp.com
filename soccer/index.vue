@@ -101,7 +101,12 @@ import {
                 {
                     id: "p3",
                     startDate: "2019-08-14",
-                    title: "<b>5:30pm @ Muirwood</b><br />Practice"
+                    title: "Practice <b>cancelled</b> due to heat!!"
+                },
+                {
+                    id: "p3a",
+                    startDate: "2019-08-15",
+                    title: "<b>5:30pm @ Muirwood</b><br />Practice and pick up uniforms/parade wings"
                 },
                 {
                     id: "a1",
@@ -112,8 +117,8 @@ import {
                 },
                 {
                     id: "p4",
-                    startDate: "2019-08-21",
-                    title: "<b>5:30pm @ Muirwood</b><br />Practice"
+                    startDate: "2019-08-22",
+                    title: "<b>5:30pm @ Muirwood</b><br />Practice, Party at 7600 Olive Drive!"
                 },
                 {
                     id: "a2",
