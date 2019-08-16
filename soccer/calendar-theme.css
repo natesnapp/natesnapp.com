@@ -58,6 +58,11 @@ Overriding default theme
 	border-color: #f7e0c7;
 }
 
+.theme-default .cv-event.pink {
+	background-color: #ff99ff;
+	border-color: #ff66ff;
+}
+
 .theme-default .cv-event.blue {
 	background-color: #d0e7ff;
 	border-color: #f7e0c7;

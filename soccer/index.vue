@@ -133,15 +133,82 @@ import {
                     classes: "orange"
                 },
                 {
+                    id: "g1",
+                    startDate: "2019-08-24",
+                    title: "<b>10am vs Dalmations</b><br /><span style=\"background-color:#ff9933\">Orange jersey</span>",
+                    classes: "pink"
+                },
+                {
+                    id: "a3",
+                    startDate: "2019-08-30",
+                    endDate: "2019-09-02",
+                    title: "Labor Day weekend - No Practice",
+                    classes: "blue"
+                },
+                {
                     id: "p5",
                     startDate: "2019-08-30",
                     title: "<b>5:30pm @ Muirwood</b><br />Practice"
+                },
+                {
+                    id: "g2",
+                    startDate: "2019-09-07",
+                    title: "<b>3:30pm vs Dashers</b><br /><span style=\"background-color:#999999\">Grey</span> jersey",
+                    classes: "pink"
                 },
                 {
                     id: "e2",
                     startDate: "2019-09-14",
                     title: "<b>Picture Day!</b><br />Details to come",
                     classes: "orange"
+                },
+                {
+                    id: "g3",
+                    startDate: "2019-09-14",
+                    title: "<b>8:00am vs Dandelions</b><br /><span style=\"background-color:#ff9933\">Orange</span> jersey",
+                    classes: "pink"
+                },
+                {
+                    id: "g4",
+                    startDate: "2019-09-21",
+                    title: "<b>9:15am vs Dancers</b><br /><span style=\"background-color:#999999\">Grey</span> jersey",
+                    classes: "pink"
+                },
+                {
+                    id: "g5",
+                    startDate: "2019-09-28",
+                    title: "<b>11:45am vs Dazzlers</b><br /><span style=\"background-color:#999999\">Grey</span> jersey",
+                    classes: "pink"
+                },
+                {
+                    id: "g6",
+                    startDate: "2019-10-05",
+                    title: "<b>3:30pm vs Diamonds</b><br /><span style=\"background-color:#ff9933\">Orange</span> jersey",
+                    classes: "pink"
+                },
+                {
+                    id: "g7",
+                    startDate: "2019-10-12",
+                    title: "<b>2:15pm vs Doves</b><br /><span style=\"background-color:#999999\">Grey</span> jersey",
+                    classes: "pink"
+                },
+                {
+                    id: "g8",
+                    startDate: "2019-10-19",
+                    title: "<b>2:15pm vs Dolphins</b><br /><span style=\"background-color:#ff9933\">Orange</span> jersey",
+                    classes: "pink"
+                },
+                {
+                    id: "g9",
+                    startDate: "2019-10-26",
+                    title: "<b>1:00pm vs Daffodils</b><br /><span style=\"background-color:#ff9933\">Orange</span> jersey",
+                    classes: "pink"
+                },
+                {
+                    id: "g7",
+                    startDate: "2019-11-02",
+                    title: "<b>11:45pm vs Doodlebugs</b><br /><span style=\"background-color:#999999\">Grey</span> jersey",
+                    classes: "pink"
                 },
             ],
       }
