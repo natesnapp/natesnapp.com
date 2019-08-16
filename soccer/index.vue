@@ -146,11 +146,6 @@ import {
                     classes: "blue"
                 },
                 {
-                    id: "p5",
-                    startDate: "2019-08-30",
-                    title: "<b>5:30pm @ Muirwood</b><br />Practice"
-                },
-                {
                     id: "g2",
                     startDate: "2019-09-07",
                     title: "<b>3:30pm vs Dashers</b><br /><span style=\"background-color:#999999\">Grey</span> jersey",
