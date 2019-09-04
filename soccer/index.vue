@@ -1,19 +1,17 @@
 <template>
   <div>
-    <img src="./imgs/dragonflys.png" />
-    <h2>Week 3</h2>
-    <p>
-    Last Friday was a great success and it was fun to have all the girls have an opportunity to meet and practice together. I'd like to pass along the news that we have a new player joining our team. Please welcome Charlotte! We will see her tomorrow at practice.
-    </p>
-    <p>
-    Here is some info for this week:
+    <img src="./imgs/dragonflies.jpg" />
+    <h2>Week 6</h2>
+    <p>I hope all have had a wonderful Labor Day weekend. I'd like to recap week 4 and the official open of the soccer season. After a great practice and pizza party, it was great to see everyone at the opening parade! All the girls looked great in their costumes and did really well in their first game.</p>
+    <p>Since this is the first game of the season, I am still working some things out. A few points:</p>
     <ul>
-    <li>Practice is Wednesday this week and next (online calendar). It will be at 5:30 and at the same location (Muir Wood park @ 4701 Muirwood Dr, by the playground).</li>
-    <li>We have our team Pizza/Pool party after practice, Aug 21. I will grab some pizzas from Costco and we can organize some other food/drinks next week. Bring swimsuits and come see our team banner and we'll make sure it is all ready for the parade!</li>
-    <li>I talked to the Rage coordinator this morning (Tamie) and they are still finishing up the game schedule. I would expect to have it in the next few days, and I will post it on our calendar as soon as I receive it.</li>
-    <li>She also mentioned that uniforms have arrived, but the official email has not gone out. I'm hoping they have them available for tomorrow to check sizes, if needed.</li>
-    <li>I'd like to find a way to help the girls get to know each other a little better, and so I put together a short questionnaire. Please take a moment with your little player to fill this out &#128512;</li>
-    </ul>  
+        <li>We'll start warming up 15 minutes before game time. So if the game is 3:30 pm, we'll start kicking the ball around behind the field at 3:15pm. I'll bring my equipment and try to have the team banner set up so you can find us easily.</li>
+        <li>I have been rotating the girls quickly... almost like a hockey line-up 😆. A lot of this is to keep the girls in touch with the game, as well as the girls tiring quickly. This will probably continue for another game or two as we build their endurance. Ultimately, I would like to be able to keep girls in for about 3 minutes at a time, and I think we'll get there with more practice. I've already seen a difference just from our first few weeks!</li>
+        <li>Thank you for all your help to keep the girls focused on the play time. I know it is super fun for them to be seen and supported by family and friends. No problem if they decide they want to come off because they are tired. Last year Izzy would do summersaults or even run backwards when she got bored! They are young and learning. If there is anything I can do to make the experience better for your girl, please let me know! Let them know the team is excited to have them, and if they want to come give you five or hugs during the game, just let them know the game is on and to keep going!</li>
+        <li>Also thanks for helping with the rule that players and coach be on one side and parents/fans on the other of the field. We have new players and I know it is hard. Feel free to run over or stand in the wings if you think it will help best encourage your player. I'll also do my best to encourage the other teams to follow the same rule, but I understand that sometimes it can be tough to find shade.</li>
+        </ul>
+    <p>I am looking to see if we should adjust the day for practice, as I may have a commitment for my oldest daughter who is starting up field hockey which is Friday at 6:30pm. For this week, let's just shift the practice time back to 5pm if that works. Let me know if you have any concern if we do practice on Wed or Thursday, as I know we need to have a consistent day and time. Thanks for your support!</p>
+    <p>See everyone for practice and the game this week!</p>
     </p>
         <div class="calendar-parent">
             <calendar-view
@@ -21,7 +19,7 @@
                 :show-date="showDate"
                 :time-format-options="{hour: 'numeric', minute:'2-digit'}"
                 :enable-drag-drop="true"
-                eventContentHeight="3.5em"
+                eventContentHeight="5.5em"
                 :disable-past="disablePast"
                 :disable-future="disableFuture"
                 :show-event-times="showEventTimes"
@@ -144,6 +142,11 @@ import {
                     endDate: "2019-09-02",
                     title: "Labor Day weekend - No Practice",
                     classes: "blue"
+                },
+                {
+                    id: "p4",
+                    startDate: "2019-09-06",
+                    title: "<b>5:00pm</b> @ Muirwood<br />Practice"
                 },
                 {
                     id: "g2",
@@ -365,14 +368,14 @@ import {
       flex-grow: 1;
       overflow-x: hidden;
       overflow-y: hidden;
-      max-height: 80vh;
+      max-height: 100vh;
       background-color: white;
   }
   /* For long calendars, ensure each week gets sufficient height. The body of the calendar will scroll if needed */
   .cv-wrapper.period-month.periodCount-2 .cv-week,
   .cv-wrapper.period-month.periodCount-3 .cv-week,
   .cv-wrapper.period-year .cv-week {
-      min-height: 6rem;
+      min-height: 8rem;
   }
   /* These styles are optional, to illustrate the flexbility of styling the calendar purely with CSS. */
   /* Add some styling for events tagged with the "birthday" class */
