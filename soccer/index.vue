@@ -155,6 +155,11 @@ import {
                     classes: "pink"
                 },
                 {
+                    id: "p5",
+                    startDate: "2019-09-13",
+                    title: "<b>5:00pm</b> @ Muirwood<br />Practice"
+                },
+                {
                     id: "e2",
                     startDate: "2019-09-14",
                     title: "<b>Picture Day!</b><br />Details to come",
@@ -167,10 +172,20 @@ import {
                     classes: "pink"
                 },
                 {
+                    id: "p6",
+                    startDate: "2019-09-20",
+                    title: "<b>5:00pm</b> @ Muirwood<br />Practice"
+                },
+                {
                     id: "g4",
                     startDate: "2019-09-21",
                     title: "<b>9:15am vs Dancers</b><br /><span style=\"background-color:#999999\">Grey</span> jersey",
                     classes: "pink"
+                },
+                {
+                    id: "p6",
+                    startDate: "2019-09-27",
+                    title: "<b>5:00pm</b> @ Muirwood<br />Practice"
                 },
                 {
                     id: "g5",
@@ -179,10 +194,20 @@ import {
                     classes: "pink"
                 },
                 {
+                    id: "p7",
+                    startDate: "2019-10-04",
+                    title: "<b>5:00pm</b> @ Muirwood<br />Practice"
+                },
+                {
                     id: "g6",
                     startDate: "2019-10-05",
                     title: "<b>3:30pm vs Diamonds</b><br /><span style=\"background-color:#ff9933\">Orange</span> jersey",
                     classes: "pink"
+                },
+                {
+                    id: "p8",
+                    startDate: "2019-10-11",
+                    title: "<b>5:00pm</b> @ Muirwood<br />Practice"
                 },
                 {
                     id: "g7",
