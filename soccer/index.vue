@@ -1,6 +1,6 @@
 <template>
   <div>
-    <img src="./imgs/dragonflies.jpg" />
+    <!--<img src="./imgs/dragonflies.jpg" />-->
     <h2>Week 6</h2>
     <p>I hope all have had a wonderful Labor Day weekend. I'd like to recap week 4 and the official open of the soccer season. After a great practice and pizza party, it was great to see everyone at the opening parade! All the girls looked great in their costumes and did really well in their first game.</p>
     <p>Since this is the first game of the season, I am still working some things out. A few points:</p>
