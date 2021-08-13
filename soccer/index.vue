@@ -1,17 +1,11 @@
 <template>
   <div>
     <!--<img src="./imgs/dragonflies.jpg" />-->
-    <h2>Week 6</h2>
-    <p>I hope all have had a wonderful Labor Day weekend. I'd like to recap week 4 and the official open of the soccer season. After a great practice and pizza party, it was great to see everyone at the opening parade! All the girls looked great in their costumes and did really well in their first game.</p>
-    <p>Since this is the first game of the season, I am still working some things out. A few points:</p>
-    <ul>
-        <li>We'll start warming up 15 minutes before game time. So if the game is 3:30 pm, we'll start kicking the ball around behind the field at 3:15pm. I'll bring my equipment and try to have the team banner set up so you can find us easily.</li>
-        <li>I have been rotating the girls quickly... almost like a hockey line-up 😆. A lot of this is to keep the girls in touch with the game, as well as the girls tiring quickly. This will probably continue for another game or two as we build their endurance. Ultimately, I would like to be able to keep girls in for about 3 minutes at a time, and I think we'll get there with more practice. I've already seen a difference just from our first few weeks!</li>
-        <li>Thank you for all your help to keep the girls focused on the play time. I know it is super fun for them to be seen and supported by family and friends. No problem if they decide they want to come off because they are tired. Last year Izzy would do summersaults or even run backwards when she got bored! They are young and learning. If there is anything I can do to make the experience better for your girl, please let me know! Let them know the team is excited to have them, and if they want to come give you five or hugs during the game, just let them know the game is on and to keep going!</li>
-        <li>Also thanks for helping with the rule that players and coach be on one side and parents/fans on the other of the field. We have new players and I know it is hard. Feel free to run over or stand in the wings if you think it will help best encourage your player. I'll also do my best to encourage the other teams to follow the same rule, but I understand that sometimes it can be tough to find shade.</li>
-        </ul>
-    <p>I am looking to see if we should adjust the day for practice, as I may have a commitment for my oldest daughter who is starting up field hockey which is Friday at 6:30pm. For this week, let's just shift the practice time back to 5pm if that works. Let me know if you have any concern if we do practice on Wed or Thursday, as I know we need to have a consistent day and time. Thanks for your support!</p>
-    <p>See everyone for practice and the game this week!</p>
+    <h2>Fall 2021 Season Start</h2>
+    <p>I hope all have had an awesome summer!</p>
+    <p>I'm excited to have the girls on our team and we've had a chance to have a couple of morning practices. I'd like to have our next practice on Monday morning and then invite everyone for a team pizza party and to vote on our team name Wednesday evening! It will be a great chance for parents to get to know each other, as well. We have our first game coming up quickly on Saturday, August 21st. To help track practices and games, I've make a calendar below for your convenience.</p>
+    <p>We'll start warming up 15 minutes before game time. So if the game is 12:30 pm, we'll start kicking the ball around and doing stretches at 12:15pm. I'll bring the soccer balls and usually be wearing my orange hat, so you can find us easily.</p>
+    <p>See everyone next week!</p>
     </p>
         <div class="calendar-parent">
             <calendar-view
@@ -71,7 +65,7 @@ import {
     data() {
       return {
             /* Show the current month, and give it some fake events to show */
-            showDate: new Date(2019, 7, 1, 0, 0),
+            showDate: new Date(2021, 8, 1, 0, 0),
             message: "",
             startingDayOfWeek: 0,
             disablePast: false,
@@ -88,150 +82,100 @@ import {
             events: [
                 {
                     id: "p1",
-                    startDate: "2019-08-02",
-                    title: "<b>5:30pm @ Muirwood</b><br />First team practice"
+                    startDate: "2021-07-30",
+                    title: "<b>8-8:45am @ Temple Ridge</b><br />First team practice"
                 },
                 {
                     id: "p2",
-                    startDate: "2019-08-09",
-                    title: "<b>5:30pm @ Muirwood</b><br />Practice"
+                    startDate: "2021-08-03",
+                    title: "<b>8-8:45am @ Temple Ridge</b><br />Practice"
                 },
                 {
                     id: "p3",
-                    startDate: "2019-08-14",
-                    title: "Practice <b>cancelled</b> due to heat!!"
-                },
-                {
-                    id: "p3a",
-                    startDate: "2019-08-15",
-                    title: "<b>5:30pm @ Muirwood</b><br />Practice and pick up uniforms/parade wings"
-                },
-                {
-                    id: "a1",
-                    startDate: "2019-08-16",
-                    endDate: "2019-08-18",
-                    title: "Coach Snapp out of town",
-                    classes: "blue"
+                    startDate: "2021-08-10",
+                    title: "<b>8-8:45am @ Temple Ridge</b><br />Practice"
                 },
                 {
                     id: "p4",
-                    startDate: "2019-08-22",
-                    title: "<b>5:30pm @ Muirwood</b><br />Practice, Party at 7600 Olive Drive!"
+                    startDate: "2021-08-16",
+                    title: "<b>8-9am @ Temple Ridge</b><br />Practice"
                 },
                 {
-                    id: "a2",
-                    startDate: "2019-08-23",
-                    title: "Rest Up for Parade!",
+                    id: "a1",
+                    startDate: "2021-08-18",
+                    title: "<b>6-7pm @ Harvey Park</b><br />Pizza party and vote on team name",
                     classes: "blue"
                 },
                 {
+                    id: "g1",
+                    startDate: "2021-08-21",
+                    title: "<b>12:30pm vs Deerfield 208</b><br /><span style=\"background-color:#999999\">Grey</span> jersey",
+                    classes: "pink"
+                },
+                {
+                    id: "g2",
+                    startDate: "2021-08-24",
+                    title: "<b>6:45pm vs Deerfield 206</b><br /><span style=\"background-color:#999999\">Grey</span> jersey",
+                    classes: "pink"
+                },
+                {
+                    id: "g3",
+                    startDate: "2021-08-28",
+                    title: "<b>10:10am vs Deerfield 204</b><br /><span style=\"background-color:#999999\">Grey</span> jersey",
+                    classes: "pink"
+                },
+                {
+                    id: "g4",
+                    startDate: "2021-09-01",
+                    title: "<b>5:30pm vs Deerfield 202</b><br /><span style=\"background-color:#ff3333\">Red</span> jersey",
+                    classes: "pink"
+                },
+                {
+                    id: "a2",
+                    startDate: "2021-09-04",
+                    endDate: "2021-09-06",
+                    title: "Labor Day weekend - No Soccer",
+                    classes: "blue"
+                },
+                {
+                    id: "p5",
+                    startDate: "2021-09-08",
+                    title: "<b>6pm @ Temple Ridge</b><br />Practice"
+                },
+                {
                     id: "e1",
-                    startDate: "2019-08-24",
-                    title: "<b>7:00am @ Main Street</b><br />Opening Parade",
+                    startDate: "2021-09-22",
+                    title: "<b>5:30pm Pictures!</b><br />Practice @ Coach Snapp's backyard",
                     classes: "orange"
                 },
                 {
-                    id: "g1",
-                    startDate: "2019-08-24",
-                    title: "<b>10am vs Dalmations</b><br /><span style=\"background-color:#ff9933\">Orange jersey</span>",
+                    id: "g5",
+                    startDate: "2021-09-16",
+                    title: "<b>6:45pm vs Deerfield 205</b><br /><span style=\"background-color:#ff3333\">Red</span> jersey",
+                    classes: "pink"
+                },
+                {
+                    id: "g6",
+                    startDate: "2021-09-18",
+                    title: "<b>10:10am vs Deerfield 210</b><br /><span style=\"background-color:#ff3333\">Red</span> jersey",
+                    classes: "pink"
+                },
+                {
+                    id: "p6",
+                    startDate: "2021-09-29",
+                    title: "<b>6pm @ Temple Ridge</b><br />Practice"
+                },
+                {
+                    id: "g8",
+                    startDate: "2021-10-02",
+                    title: "<b>12:30pm vs Deerfield 209</b><br /><span style=\"background-color:#ff3333\">Red</span> jersey",
                     classes: "pink"
                 },
                 {
                     id: "a3",
-                    startDate: "2019-08-30",
-                    endDate: "2019-09-02",
-                    title: "Labor Day weekend - No Practice",
+                    startDate: "2021-10-06",
+                    title: "<b>6-7pm @ Coach Snapp's house</b><br />End of season party and trophies",
                     classes: "blue"
-                },
-                {
-                    id: "p4",
-                    startDate: "2019-09-06",
-                    title: "<b>5:00pm</b> @ Muirwood<br />Practice"
-                },
-                {
-                    id: "g2",
-                    startDate: "2019-09-07",
-                    title: "<b>3:30pm vs Dashers</b><br /><span style=\"background-color:#999999\">Grey</span> jersey",
-                    classes: "pink"
-                },
-                {
-                    id: "p5",
-                    startDate: "2019-09-13",
-                    title: "<b>5:00pm</b> @ Muirwood<br />Practice"
-                },
-                {
-                    id: "e2",
-                    startDate: "2019-09-14",
-                    title: "<b>Picture Day!</b><br />Details to come",
-                    classes: "orange"
-                },
-                {
-                    id: "g3",
-                    startDate: "2019-09-14",
-                    title: "<b>8:00am vs Dandelions</b><br /><span style=\"background-color:#ff9933\">Orange</span> jersey",
-                    classes: "pink"
-                },
-                {
-                    id: "p6",
-                    startDate: "2019-09-20",
-                    title: "<b>5:00pm</b> @ Muirwood<br />Practice"
-                },
-                {
-                    id: "g4",
-                    startDate: "2019-09-21",
-                    title: "<b>9:15am vs Dancers</b><br /><span style=\"background-color:#999999\">Grey</span> jersey",
-                    classes: "pink"
-                },
-                {
-                    id: "p6",
-                    startDate: "2019-09-27",
-                    title: "<b>5:00pm</b> @ Muirwood<br />Practice"
-                },
-                {
-                    id: "g5",
-                    startDate: "2019-09-28",
-                    title: "<b>11:45am vs Dazzlers</b><br /><span style=\"background-color:#999999\">Grey</span> jersey",
-                    classes: "pink"
-                },
-                {
-                    id: "p7",
-                    startDate: "2019-10-04",
-                    title: "<b>5:00pm</b> @ Muirwood<br />Practice"
-                },
-                {
-                    id: "g6",
-                    startDate: "2019-10-05",
-                    title: "<b>3:30pm vs Diamonds</b><br /><span style=\"background-color:#ff9933\">Orange</span> jersey",
-                    classes: "pink"
-                },
-                {
-                    id: "p8",
-                    startDate: "2019-10-11",
-                    title: "<b>5:00pm</b> @ Muirwood<br />Practice"
-                },
-                {
-                    id: "g7",
-                    startDate: "2019-10-12",
-                    title: "<b>2:15pm vs Doves</b><br /><span style=\"background-color:#999999\">Grey</span> jersey",
-                    classes: "pink"
-                },
-                {
-                    id: "g8",
-                    startDate: "2019-10-19",
-                    title: "<b>2:15pm vs Dolphins</b><br /><span style=\"background-color:#ff9933\">Orange</span> jersey",
-                    classes: "pink"
-                },
-                {
-                    id: "g9",
-                    startDate: "2019-10-26",
-                    title: "<b>1:00pm vs Daffodils</b><br /><span style=\"background-color:#ff9933\">Orange</span> jersey",
-                    classes: "pink"
-                },
-                {
-                    id: "g7",
-                    startDate: "2019-11-02",
-                    title: "<b>11:45pm vs Doodlebugs</b><br /><span style=\"background-color:#999999\">Grey</span> jersey",
-                    classes: "pink"
                 },
             ],
       }
