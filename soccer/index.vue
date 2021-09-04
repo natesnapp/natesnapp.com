@@ -138,9 +138,10 @@ import {
                     classes: "blue"
                 },
                 {
-                    id: "p5",
-                    startDate: "2021-09-08",
-                    title: "<b>6pm @ Temple Ridge</b><br />Practice"
+                    id: "a2a",
+                    startDate: "2021-09-07",
+                    endDate: "2021-09-10",
+                    title: "No Practice - Coach Snapp in Alaska!",
                 },
                 {
                     id: "e1",
