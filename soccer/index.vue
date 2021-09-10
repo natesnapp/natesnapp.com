@@ -144,19 +144,25 @@ import {
                     title: "No Practice - Coach Snapp in Alaska!",
                 },
                 {
+                    id: "g5",
+                    startDate: "2021-09-11",
+                    title: "<b>11:20am vs Deerfield 207</b><br /><span style=\"background-color:#ff3333\">Red</span> jersey",
+                    classes: "pink"
+                },
+                {
                     id: "e1",
                     startDate: "2021-09-22",
                     title: "<b>5:30pm Pictures!</b><br />Practice @ Coach Snapp's backyard",
                     classes: "orange"
                 },
                 {
-                    id: "g5",
+                    id: "g6",
                     startDate: "2021-09-16",
                     title: "<b>6:45pm vs Deerfield 205</b><br /><span style=\"background-color:#ff3333\">Red</span> jersey",
                     classes: "pink"
                 },
                 {
-                    id: "g6",
+                    id: "g7",
                     startDate: "2021-09-18",
                     title: "<b>10:10am vs Deerfield 210</b><br /><span style=\"background-color:#ff3333\">Red</span> jersey",
                     classes: "pink"
