@@ -65,7 +65,7 @@ import {
     data() {
       return {
             /* Show the current month, and give it some fake events to show */
-            showDate: new Date(2022, 4, 19, 0, 0),
+            showDate: new Date(2022, 3, 19, 0, 0),
             message: "",
             startingDayOfWeek: 0,
             disablePast: false,
