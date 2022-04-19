@@ -1,11 +1,11 @@
 <template>
   <div>
     <!--<img src="./imgs/dragonflies.jpg" />-->
-    <h2>Fall 2021 Season Start</h2>
-    <p>I hope all have had an awesome summer!</p>
-    <p>I'm excited to have the girls on our team and we've had a chance to have a couple of morning practices. I'd like to have our next practice on Monday morning and then invite everyone for a team pizza party and to vote on our team name Wednesday evening! It will be a great chance for parents to get to know each other, as well. We have our first game coming up quickly on Saturday, August 21st. To help track practices and games, I've make a calendar below for your convenience.</p>
+    <h2>Spring 2022 Season</h2>
+    <p>Welcome Heart Queens!</p>
+    <p>It has been great to work with the girls on the team so far, and we are looking forward to an exciting season! To help track practices and games, I've make a calendar below for your convenience.</p>
     <p>We'll start warming up 15 minutes before game time. So if the game is 12:30 pm, we'll start kicking the ball around and doing stretches at 12:15pm. I'll bring the soccer balls and usually be wearing my orange hat, so you can find us easily.</p>
-    <p>See everyone next week!</p>
+    <p>See everyone on the field!</p>
     </p>
         <div class="calendar-parent">
             <calendar-view
@@ -82,105 +82,76 @@ import {
             events: [
                 {
                     id: "p1",
-                    startDate: "2021-07-30",
-                    title: "<b>8-8:45am @ Temple Ridge</b><br />First team practice"
-                },
-                {
-                    id: "p2",
-                    startDate: "2021-08-03",
-                    title: "<b>8-8:45am @ Temple Ridge</b><br />Practice"
-                },
-                {
-                    id: "p3",
-                    startDate: "2021-08-10",
-                    title: "<b>8-8:45am @ Temple Ridge</b><br />Practice"
-                },
-                {
-                    id: "p4",
-                    startDate: "2021-08-16",
-                    title: "<b>8-9am @ Temple Ridge</b><br />Practice"
+                    startDate: "2022-03-31",
+                    title: "<b>6-7pm @ Temple Ridge</b><br />First team practice"
                 },
                 {
                     id: "a1",
-                    startDate: "2021-08-18",
-                    title: "<b>6-7pm @ Harvey Park</b><br />Pizza party and vote on team name",
+                    startDate: "2022-04-12",
+                    title: "<b>6-7pm @ Coach Snapp's</b><br />Pizza party and vote on team name",
                     classes: "blue"
                 },
                 {
                     id: "g1",
-                    startDate: "2021-08-21",
-                    title: "<b>12:30pm vs Deerfield 208</b><br /><span style=\"background-color:#999999\">Grey</span> jersey",
-                    classes: "pink"
+                    startDate: "2022-04-16",
+                    title: "<b>9:00am vs Deerfield 207</b><br /><span style=\"background-color:#999999\">Grey</span> jersey",
+                    classes: "purple"
+                },
+                {
+                    id: "p2",
+                    startDate: "2022-04-21",
+                    title: "<b>6-7pm @ Temple Ridge</b><br />Practice"
                 },
                 {
                     id: "g2",
-                    startDate: "2021-08-24",
-                    title: "<b>6:45pm vs Deerfield 206</b><br /><span style=\"background-color:#999999\">Grey</span> jersey",
+                    startDate: "2022-04-26",
+                    title: "<b>6:30pm vs Deerfield 203</b><br /><span style=\"background-color:#ff3333\">Red</span> jersey",
                     classes: "pink"
                 },
                 {
                     id: "g3",
-                    startDate: "2021-08-28",
-                    title: "<b>10:10am vs Deerfield 204</b><br /><span style=\"background-color:#999999\">Grey</span> jersey",
-                    classes: "pink"
+                    startDate: "2022-04-30",
+                    title: "<b>12:30pm vs Deerfield 205</b><br /><span style=\"background-color:#ff3333\">Red</span> jersey",
+                    classes: "purple"
+                },
+                {
+                    id: "p3",
+                    startDate: "2022-05-05",
+                    title: "<b>6-7pm @ Temple Ridge</b><br />Practice"
                 },
                 {
                     id: "g4",
-                    startDate: "2021-09-01",
-                    title: "<b>5:30pm vs Deerfield 202</b><br /><span style=\"background-color:#ff3333\">Red</span> jersey",
+                    startDate: "2022-05-07",
+                    title: "<b>12:30pm vs Deerfield 205</b><br /><span style=\"background-color:#ff3333\">Red</span> jersey",
                     classes: "pink"
-                },
-                {
-                    id: "a2",
-                    startDate: "2021-09-04",
-                    endDate: "2021-09-06",
-                    title: "Labor Day weekend - No Soccer",
-                    classes: "blue"
-                },
-                {
-                    id: "a2a",
-                    startDate: "2021-09-07",
-                    endDate: "2021-09-10",
-                    title: "No Practice - Coach Snapp in Alaska!",
                 },
                 {
                     id: "g5",
-                    startDate: "2021-09-11",
-                    title: "<b>11:20am vs Deerfield 207</b><br /><span style=\"background-color:#ff3333\">Red</span> jersey",
+                    startDate: "2022-05-12",
+                    title: "<b>5:15pm vs Deerfield 210</b><br /><span style=\"background-color:#ff3333\">Red</span> jersey",
                     classes: "pink"
                 },
                 {
-                    id: "e1",
-                    startDate: "2021-09-22",
-                    title: "<b>5:30pm Pictures!</b><br />Practice @ Coach Snapp's backyard",
-                    classes: "orange"
-                },
-                {
                     id: "g6",
-                    startDate: "2021-09-16",
-                    title: "<b>6:45pm vs Deerfield 205</b><br /><span style=\"background-color:#ff3333\">Red</span> jersey",
+                    startDate: "2022-05-14",
+                    title: "<b>1:40pm vs Deerfield 208</b><br /><span style=\"background-color:#ff3333\">Red</span> jersey",
                     classes: "pink"
                 },
                 {
                     id: "g7",
-                    startDate: "2021-09-18",
-                    title: "<b>10:10am vs Deerfield 210</b><br /><span style=\"background-color:#ff3333\">Red</span> jersey",
+                    startDate: "2022-05-17",
+                    title: "<b>6:30pm vs Deerfield 202</b><br /><span style=\"background-color:#999999\">Red</span> jersey",
                     classes: "pink"
-                },
-                {
-                    id: "p6",
-                    startDate: "2021-09-29",
-                    title: "<b>6pm @ Temple Ridge</b><br />Practice"
                 },
                 {
                     id: "g8",
-                    startDate: "2021-10-02",
-                    title: "<b>12:30pm vs Deerfield 209</b><br /><span style=\"background-color:#ff3333\">Red</span> jersey",
+                    startDate: "2022-05-21",
+                    title: "<b>12:30pm vs Deerfield 204</b><br /><span style=\"background-color:#999999\">Red</span> jersey",
                     classes: "pink"
                 },
                 {
-                    id: "a3",
-                    startDate: "2021-10-06",
+                    id: "a2",
+                    startDate: "2022-05-21",
                     title: "<b>6-7pm @ Coach Snapp's house</b><br />End of season party and trophies",
                     classes: "blue"
                 },
